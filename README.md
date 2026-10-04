@@ -11,16 +11,32 @@ Here you will be guide along the current database structure, for more structure 
 
 ### Entities
 
-- Entity 1
+- *Category*: Represents a [Product] category in the system.
+
+- *Customer*: Represents a physical consumer of [Order]s from business.
+
+- *Order*: A business products request to attend to the [Customer].
+
+- *OrderItem*: A product item into the [Order] request.
+
+- *Product*: Represents an available offered business product for [Customer]s to buy.
+
+- *Supplier*: Represents a business agent that attends [Customer]'s [Order]s.
 
 ### Relations
 
-- (1:1 / 1:M / M:M) Entity 1 (Dependant) -> Entity 2 (Dependency).
+- (M:1) [Product](Dependant) -> [Category](Dependency).
+
+- (M:1) [Order](Dependant) -> [Supplier](Dependency).
+
+- (1:1) [Customer] -> [Supplier].
+
+- (M:1) [OrderItem](Dependant) -> [Order](Dependency).
+
+- (M:1) [OrderItem](Dependant) -> [Product](Dependency).
 
 > Dependant: Is the entity that has as a property the reeference to the [Dependency].
 > Dependency: Is the entity referenced from a [Dependant].
-
-### <Extras (StoredProcedures/CustomViews/CustomReports. Etc)>
 
 ## **Installation & Usage**
 
@@ -33,3 +49,7 @@ Here you will be able to see how use this database template in your business pro
 - GITHUB.PAT: It's a generated personal access token, go to *Settings* > *Developer Settings* > *Personal access tokens*, create a **Classic** type access token and provide at minimum **Read:Packages** permission.
 
 > dotnet add package **Sandbox.Database.Template** --source github
+
+We also include a testing tools and utilities for this database, you might install it using:
+
+> dotnet add package **Sandbox.Database.Template.Testing** --source github

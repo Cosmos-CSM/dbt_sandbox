@@ -20,4 +20,4 @@ Fixes for bugs or problems detected.
 
 | Package                                 | Old Version      | New Version     | Comments |
 |:----------------------------------------|:----------------:|:---------------:| :------- |
-|                                         |                  |                 |          |
+| Microsoft.EntityFrameworkCore.Design    | ---              | 10.2.12         |          |
