@@ -1,4 +1,4 @@
-# *> Package Name <*
+# *Sandbox Database Template*
 
 Here you will be able to see and identify changes along each package delivered version.
 
