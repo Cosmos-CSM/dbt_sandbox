@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path=".gitignore" />
+    <File Path="integration_tests.runsettings" />
+  </Folder>
+  <Project Path="CSM Sandbox Database Core/Sandbox Database Template.csproj" />
+  <Project Path="CSM Sandbox Database Testing/Sandbox Database Template Testing.csproj" Id="43d9ba52-6c4f-46cf-973c-68cee8cbcdae" />
+  <Project Path="Integration Tests/Integration Tests.csproj" />
+</Solution>

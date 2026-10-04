@@ -1,12 +1,35 @@
-# CSM Sandbox Database
+# *Sandbox Database Template*
 
-A developer database tool, represents a sandbox database to develop with no actual business implementations things that don't need specific business data, but need
-access to data.
+This repository provides database template projects, this are pre-configured databases for ORM support on different
+frameworks, is intended to be connected and work immediate OOB, but they provide a customization layer to extend base behavior.
 
-Uses examples:
+> For version details check [CHANGELOG](./sandbox_database_template/CHANGELOG.md)
 
-1. When developing a view component that handles data but deveoper doesn't have access to a product database.
+## **Database Structure**
 
-2. When developing core / business level tools that aren't directly business products and don't have access to a product database.
+Here you will be guide along the current database structure, for more structure details per version, please check *CHANGELOG.md*.
 
-This tool should be accessible for all developers and encouraged to use on low level **CSM** development.
+### Entities
+
+- Entity 1
+
+### Relations
+
+- (1:1 / 1:M / M:M) Entity 1 (Dependant) -> Entity 2 (Dependency).
+
+> Dependant: Is the entity that has as a property the reeference to the [Dependency].
+> Dependency: Is the entity referenced from a [Dependant].
+
+### <Extras (StoredProcedures/CustomViews/CustomReports. Etc)>
+
+## **Installation & Usage**
+
+Here you will be able to see how use this database template in your business project.
+
+> dotnet nuget add source --name "github" --username {*GITHUB.USR*} --password {*GITHUB.PAT*} "<https://nuget.pkg.github.com/Cosmos-CSM/index.json>"
+
+- GITHUB.USR: It's your github user account.
+
+- GITHUB.PAT: It's a generated personal access token, go to *Settings* > *Developer Settings* > *Personal access tokens*, create a **Classic** type access token and provide at minimum **Read:Packages** permission.
+
+> dotnet add package **Sandbox.Database.Template** --source github

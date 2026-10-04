@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>Sandbox.Database.Template.Testing</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+	  <Version>1.0.0</Version>
+	  <Company>Cosmos (CSM)</Company>
+	  <Authors>Renato Urrea</Authors>
+	  <PackageId>Sandbox.Database.Template.Testing</PackageId>
+	  <RepositoryUrl>https://github.com/Cosmos-CSM/csm_sandbox_database</RepositoryUrl>
+	  <OutputType>Exe</OutputType>
+	  <IsPackable>true</IsPackable>
+	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
+	  <IsTestProject>false</IsTestProject>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CSM.Database.Testing" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CSM Sandbox Database Core\Sandbox Database Template.csproj" />
+  </ItemGroup>
+
+</Project>
