@@ -23,8 +23,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CSM Sandbox Database Core\Sandbox Database Template.csproj" />
-    <ProjectReference Include="..\CSM Sandbox Database Testing\Sandbox Database Template Testing.csproj" />
+    <ProjectReference Include="..\Sandbox Database Template Testing\Sandbox Database Template Testing.csproj" />
+    <ProjectReference Include="..\Sandbox Database Template\Sandbox Database Template.csproj" />
   </ItemGroup>
 
 

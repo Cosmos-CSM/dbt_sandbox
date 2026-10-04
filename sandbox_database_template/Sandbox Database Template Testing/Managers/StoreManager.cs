@@ -3,12 +3,10 @@
 using Sandbox.Database.Template.Entities;
 using Sandbox.Database.Template.Testing.Utils;
 
-using SandboxEntities = CSM_Sandbox_Database_Core.Entities;
-
 namespace Sandbox.Database.Template.Testing.Managers;
 
 /// <summary>
-///     Represents a test data storing handler for <see cref="Template.SandboxDatabase"/> entities.
+///     Represents a test data storing handler for <see cref="SandboxDatabase"/> entities.
 /// </summary>
 public class StoreManager {
 
